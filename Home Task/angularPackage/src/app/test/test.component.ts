@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-  secondData = " ";
-  isTrue = "true";
+  // secondData = " ";
+  // isTrue = "true";
+public servData =[]; 
+public serv:test-service = new test-Service(); 
+
   constructor() { }
 
   ngOnInit() {
