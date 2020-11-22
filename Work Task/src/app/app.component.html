@@ -1,0 +1,18 @@
+<ul>
+  <li *ngFor = "let trainee of traineeData">{{trainee.name}}</li><br><br><hr/>
+  <li *ngFor = "let trainee of traineeData">{{trainee.id}}</li>
+</ul>
+
+<nav class="navbar navbar-expand-sm bg-light">
+
+      <a class="nav-link" routerLink = "inbox" routerLinKActive = "Active">Inbox</a>
+
+      <a class="nav-link" routerLink = "sent">Sent</a>
+
+      <a class="nav-link" routerLink = "draft">Draft</a>
+
+</nav> 
+
+<router-outlet></router-outlet>
+
+helllooooooooo
