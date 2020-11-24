@@ -1,0 +1,27 @@
+
+<script>
+    var empName = ["Shafayet", "Habib", "Bari", "Rasel"];
+    var empSalary = [.21, .10, 00, 1];
+
+    var html = "<table>";
+        html += "<thead>";
+        html += "<tr>";
+        html += "<th>Employee Name</th>";
+        html += "<th>Employee Salary</th>";
+        html += "</tr>";
+        html += "</thead>";
+        html += "<tbody>";
+
+        for(i=0; i<empName.length; i++){
+            html += "<tr>";
+            html += "<td>"+empName[i]+"</td>";
+            html += "<td>"+empSalary[i]+"</td>";
+            html += "</tr>";
+        }
+
+        html += "</tbody>";
+        html += "</table>";
+
+        document.write(html);
+
+</script>

@@ -4,12 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TestServiceService {
+  public data;
   public getData() {
-    public data = [[1, 6, 3],
-  [5, 2, 7],
-  [9, 10, 11],];
-return data; 
-}
+    this.data = [
+      { id: 1, name: 'Mizan' }
+    ];
+    return this.data;
+  }
 
-constructor() { }
+  constructor() { }
 }

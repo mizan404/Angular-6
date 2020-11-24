@@ -1,0 +1,225 @@
+<style>
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<ul class="nav">
+  <li class="nav-item">
+    <!-- <img src="/assets/photo/email.png" style="width: 10px;"> -->
+    <a class="nav-link" href="#"><i class="fas fa-envelope">support@e-commerce.com</i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"> <i class="fas fa-phone-square">0123456789</i></a>
+  </li>
+</ul>
+
+<nav class="navbar navbar-expand-sm bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/photo/logo.png" alt="logo" style="width:100px;">
+  </a>
+  <form class="form-inline">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <select class="input-group-text" title="Search in">
+          <option selected="selected" value="search-alias">All Departments</option>
+          <option value="search-alias=baby-products-intl-ship">Baby</option>
+          <option value="search-alias=beauty-intl-ship">Beauty & Personal Care</option>
+          <option value="search-alias=stripbooks-intl-ship">Books</option>
+          <option value="search-alias=computers-intl-ship">Computers</option>
+          <option value="search-alias=electronics-intl-ship">Electronics</option>
+          <option value="search-alias=fashion-womens-intl-ship">Women's Fashion</option>
+          <option value="search-alias=fashion-mens-intl-ship">Men's Fashion</option>
+          <option value="search-alias=fashion-girls-intl-ship">Girls' Fashion</option>
+          <option value="search-alias=fashion-boys-intl-ship">Boys' Fashion</option>
+          <option value="search-alias=kitchen-intl-ship">Home & Kitchen</option>
+          <option value="search-alias=luggage-intl-ship">Luggage</option>
+          <option value="search-alias=sporting-intl-ship">Sports & Outdoors</option>
+          <option value="search-alias=tools-intl-ship">Tools & Home Improvement</option>
+          <option value="search-alias=toys-and-games-intl-ship">Toys & Games</option>
+        </select>
+        <input class="form-control col-lg-12" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </div>
+    </div>
+  </form>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/photo/los-angeles.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/photo/los-angeles.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/photo/Los_Angeles.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div class="col">
+  <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="row">
+                      <div class="col">
+                          <p class="btn btn-danger btn-block">99.00 $</p>
+                      </div>
+                      <div class="col">
+                          <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="row">
+                      <div class="col">
+                          <p class="btn btn-danger btn-block">99.00 $</p>
+                      </div>
+                      <div class="col">
+                          <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="row">
+                      <div class="col">
+                          <p class="btn btn-danger btn-block">99.00 $</p>
+                      </div>
+                      <div class="col">
+                          <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="row">
+                      <div class="col">
+                          <p class="btn btn-danger btn-block">99.00 $</p>
+                      </div>
+                      <div class="col">
+                          <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="row">
+                      <div class="col">
+                          <p class="btn btn-danger btn-block">99.00 $</p>
+                      </div>
+                      <div class="col">
+                          <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="row">
+                      <div class="col">
+                          <p class="btn btn-danger btn-block">99.00 $</p>
+                      </div>
+                      <div class="col">
+                          <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 justify-content-center">
+          <nav aria-label="...">
+              <ul class="pagination">
+                  <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</div>
