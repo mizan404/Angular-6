@@ -1,0 +1,67 @@
+1. install json-server
+npm install -g json-server
+2. create a database in json format
+db.json
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+json-server --watch db.json
+
+3. import HttpClientModule in app.module.ts in imports section
+
+4. refrenece inside the constructor of the service
+private http: HttpClient
+
+5.declare an api where the data exists
+url = "http://localhost:3000/posts";
+
+
+<form #userForm = "ngForm" (ngSubmit) = "formSubmit(userForm.value)">
+    <input type="text" name="user_name" id="user_name" ngModel><br>
+    <input type="text" name="password" id="password" ngModel><br>
+    <input type="submit">
+</form>
+
+
+  formSubmit(data){
+    console.log(data.user_name);
+    this.traineeService.setPosts(data);
+   
+  }
+
+  public setPosts(data){
+    return this.http.post(this.url, data);
+  }
+
+
+
+//get data
+
+ constructor(private traineeService: TraineeService){}
+  
+  ngOnInit() {
+      this.traineeService.getPosts()
+      .subscribe(
+      (response) => {
+        this.traineeData = response
+      },
+      (error) => {
+        console.log(error)
+      }
+    )
+    //console.log(typeof this.traineeData);
+  }
+in service
+ url = "http://localhost:3000/posts";
+
+  constructor(private http: HttpClient) { }
+  public getPosts(){
+    return this.http.get(this.url);
+  }
+
