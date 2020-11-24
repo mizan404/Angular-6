@@ -7,5 +7,5 @@ export class TestService {
 
   constructor() { }
   public data; 
-  
+  public getData()
 }
