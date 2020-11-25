@@ -7,15 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  public data;
-  constructor(private traineeData: TestService) { }
+  // title = 'app';
+  // public data;
+  // constructor(private traineeData: TestService) { }
 
-  ngOnInit() {
-    this.traineeData.getPosts().subscribe(
-      (response) => this.data = response
-    )
+  // ngOnInit() {
+  //   this.traineeData.getPosts().subscribe(
+  //     (response) => this.data = response
+  //   )
 
 
-  }
+  // }
+  // formSubmit(data) {
+  //   console.log(data.username);
+  //   this.traineeData.postData(data);
+
+  // }
+  
 }
