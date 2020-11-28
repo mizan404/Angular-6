@@ -1,0 +1,10 @@
+<h1>Login Form</h1>
+<br>
+<form #userForm="ngForm" (ngSubmit)="logSubmit(userForm.value)">
+
+  <input type="text" name="username" placeholder="Username" ngModel><br><br>
+  <input type="password" name="password" placeholder="Password" ngModel><br><br>
+  <input type="submit">
+</form>
+
+<p>{{userStatus}}</p>

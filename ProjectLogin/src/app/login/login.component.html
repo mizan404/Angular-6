@@ -1,0 +1,15 @@
+<p>
+  User Login Form!
+</p>
+
+<form #formLogin="ngForm" (ngSubmit)="loginUser(formLogin.value)">
+  Userame : <input type="text" name="username" id="" ngModel> <br>
+  Password : <input type="password" name="password" id="" ngModel> <br>
+  <input type="submit" name="" id="">
+</form>
+<p>{{userStatus}}</p>
+
+<!-- <ul *ngFor="let user of userData">
+  <li *ngIf="user.username == currentUser && user.password == currentUserPassword">
+  {{user.username}} has logged in</li>
+</ul> -->

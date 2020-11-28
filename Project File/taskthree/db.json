@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "name": "ss",
+      "username": "ss",
+      "password": "ss",
+      "id": 1
+    },
+    {
+      "name": "Ramin",
+      "username": "Ramin",
+      "password": "Ramin",
+      "id": 2
+    },
+    {
+      "name": "bangladesh",
+      "username": "bangladesh71",
+      "password": "71",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
