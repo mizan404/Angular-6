@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
@@ -5,6 +6,15 @@ import { NgModule } from '@angular/core';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+=======
+// import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from './../environments/environment';
+// import { AngularFirestore } from 'angularfire2/firestore';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+// import { AngularFireModule } from 'angularfire2';
+>>>>>>> 98136ca3fc337c525d96e576dc9028724ba7b796
 
 import { AppRoutingModule }
   from './app-routing.module';
@@ -43,9 +53,15 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
     BrowserModule,
     AppRoutingModule,
     NgbDropdownModule,
+<<<<<<< HEAD
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule
+=======
+    // AngularFireModule.initialApp(environment.firebase),
+    // AngularFireDatabaseModule,
+    // AngularFireAuthModule
+>>>>>>> 98136ca3fc337c525d96e576dc9028724ba7b796
 
   ],
   providers: [],

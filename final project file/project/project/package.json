@@ -21,12 +21,17 @@
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
     "@ng-bootstrap/ng-bootstrap": "^3.3.1",
+<<<<<<< HEAD
     "angularfire2": "^5.4.2",
     "bootstrap": "^4.5.3",
     "core-js": "^2.5.4",
     "firebase": "^8.1.1",
     "firebase-tools": "^8.16.2",
     "g": "^2.0.1",
+=======
+    "bootstrap": "^4.5.3",
+    "core-js": "^2.5.4",
+>>>>>>> 98136ca3fc337c525d96e576dc9028724ba7b796
     "rxjs": "6.0.0",
     "zone.js": "^0.8.26"
   },
