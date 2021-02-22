@@ -1,0 +1,55 @@
+import { AngularFireAuth }  from '@angular/fire/auth';
+import * as firebase from 'firebase/app';
+
+[...]
+
+constructor(
+  private authFire: AngularFireAuth
+) {}
+Update Password
+Old way:
+await this.authFire.currentUser.updatePassword('Passw0rd!');
+New way:
+await (await this.authFire.currentUser).updatePassword('Passw0rd!');
+
+Delete User
+Old way:
+await this.authFire.auth.currentUser.delete();
+New way:
+(await this.authFire.currentUser).delete;
+
+Sign out
+Old way:
+await this.authFire.auth.signOut();
+New way:
+await this.authFire.signOut();
+
+Auth state changed
+Old way:
+this.authFire.auth.onAuthStateChanged(...);
+New way:
+this.authFire.onAuthStateChanged(...);
+
+Update mail
+Old way:
+await this.authFire.auth.currentUser.updateEmail('some@mail.address');
+New way:
+await (await this.authFire.currentUser).updateEmail('some@mail.address');
+
+Reauthenticate user
+Old way:
+await this.authFire.auth.currentUser.reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential(this.authFire.auth.currentUser.email, 'Passw0rd!'));
+New way:
+await (await this.authFire.currentUser).reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential((await this.authFire.currentUser).email, 'Passw0rd!'));
+
+Send password reset mail
+Old way:
+await this.authFire.auth.sendPasswordResetEmail(mail);
+New way:
+await this.authFire.sendPasswordResetEmail(mail);
+
+Fetch sign in methods
+Old way:
+await this.authFire.auth.fetchSignInMethodsForEmail('some@mail.address');
+New way:
+await this.authFire.fetchSignInMethodsForEmail('some@mail.address');

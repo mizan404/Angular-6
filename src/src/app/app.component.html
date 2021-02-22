@@ -1,0 +1,34 @@
+<form #myForm="ngForm">
+  Name : <input type="text" name="name" [(ngModel)]="userObj.name"><br><br>
+  Mobile : <input type="text" name="mobile" [(ngModel)]="userObj.mobile"><br><br>
+  Email : <input type="text" name="email" [(ngModel)]="userObj.email"><br><br>
+  Password : <input type="text" name="password" [(ngModel)]="userObj.password"><br><br>
+  <button (click)="createUser(myForm.value)">Submit</button>
+  <button (click)="updateUser(myForm.value)">Update</button>
+</form>
+
+{{massege}}
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of allData">
+      <td>{{a.name}}</td>
+      <td>{{a.mobile}}</td>
+      <td>{{a.email}}</td>
+      <td>{{a.password}}</td>
+      <td><button (click)="editUser(a)">Edit</button></td>
+      <td><button (click)="deleteUser(a)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
